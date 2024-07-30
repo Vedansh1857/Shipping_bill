@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
         // Check if both fixed fields are filled
         if (fixedField1.value) {
-            if(fixedField1.value == "Item_Description_1: Turmeric powder")
+            if(fixedField1.value == "Item_Description_1: Turmeric powder" || fixedField1.value == "Turmeric powder")
                 {
                     autoField1.value = '10';
                     autoField2.value = 'USD';
                     autoField3.value = 'USDollars';
                 }
-            else if(fixedField1.value == "Item_Description_1: Wooden mandir")
+            else if(fixedField1.value == "Item_Description_1: Wooden mandir" || fixedField1.value == "Wooden mandir")
             {
                 autoField1.value = '20';
                 autoField2.value = 'INR';
