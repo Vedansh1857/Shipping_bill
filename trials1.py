@@ -157,7 +157,7 @@ try:
 
     # Retrieve all input fields
     all_elements = driver.find_elements(By.TAG_NAME, "input")
-    excluded_ids = ['Unit_Price', 'Unit_of_rate', 'Unit_of_Measurement1']
+    excluded_ids = ['Adress1', 'City', 'Pin']
 
     # Filter out excluded elements
     filtered_elements = []
