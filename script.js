@@ -9,21 +9,21 @@ document.addEventListener('DOMContentLoaded', function(){
         // Get references to the fields to be auto-filled
         const autoField1 = document.getElementById('State');
         const autoField2 = document.getElementById('Pin');
-        const autoField3 = document.getElementById('Branch-Sr-No.');
+        const autoField3 = document.getElementById('Country-of-Origin');
 
         // Check if both fixed fields are filled
         if (fixedField1.value) {
-            if(fixedField1.value == "12345")
+            if(fixedField1.value == "Ahemdabad")
             {
-                autoField1.value = 'Vedansh';
-                autoField2.value = 'a1b2c3'
-                autoField3.value = '1';
+                autoField1.value = 'Gujarat';
+                autoField2.value = '380015'
+                autoField3.value = 'India';
             }
-            else if(fixedField1.value == "67890")
+            else if(fixedField1.value == "Kanpur")
             {
-                autoField1.value = 'Anurag';
-                autoField2.value = 'd4e5f6'
-                autoField3.value = '2';
+                autoField1.value = 'UP';
+                autoField2.value = '208001'
+                autoField3.value = 'Bharat';
             }
             else
             {
