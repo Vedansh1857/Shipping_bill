@@ -1,29 +1,29 @@
 document.addEventListener('DOMContentLoaded', function(){
     // Get references to the fixed fields
-    const fixedField1 = document.getElementById('City1');
+    const fixedField1 = document.getElementById('Name-of-the-Importer');
 
     // Add event listeners to the fixed fields
     fixedField1.addEventListener('blur', autoFillFields);
 
     function autoFillFields(){
         // Get references to the fields to be auto-filled
-        const autoField1 = document.getElementById('GSTN_ID');
-        const autoField2 = document.getElementById('Pin1');
-        // const autoField3 = document.getElementById('Country-of-Origin');
+        const autoField1 = document.getElementById('Adress1');
+        const autoField2 = document.getElementById('City');
+        const autoField3 = document.getElementById('Pin');
 
         // Check if both fixed fields are filled
         if (fixedField1.value) {
-            if("Anandnagar" in fixedField1.value)
+            if(fixedField1.value == "David Import USA")
                 {
-                    // autoField1.value = 'Gujarat';
-                    autoField1.value = '24AAUDD97L1ZM'
-                    autoField2.value = '380015';
+                    autoField1.value = '2345 wall street'
+                    autoField2.value = 'New York';
+                    autoField3.value = '73844474';
                 }
-            else if("Kanpur" in fixedField1.value)
+            else if(fixedField1.value == "Vedansh")
             {
-                autoField1.value = 'A1B2C3D4E5';
-                autoField2.value = '208001'
-                // autoField3.value = 'Bharat';
+                autoField1.value = 'Daulatganj';
+                autoField2.value = 'Kanpur'
+                autoField3.value = '208001';
             }
             else
             {
