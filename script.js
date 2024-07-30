@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
         // Check if both fixed fields are filled
         if (fixedField1.value) {
-            if(fixedField1.value == "Ahemdabad")
-            {
-                // autoField1.value = 'Gujarat';
-                autoField1.value = '24AAUDD97L1ZM'
-                autoField2.value = '380015';
-            }
-            else if(fixedField1.value == "Kanpur")
+            if("Anandnagar" in fixedField1.value)
+                {
+                    // autoField1.value = 'Gujarat';
+                    autoField1.value = '24AAUDD97L1ZM'
+                    autoField2.value = '380015';
+                }
+            else if("Kanpur" in fixedField1.value)
             {
                 autoField1.value = 'A1B2C3D4E5';
                 autoField2.value = '208001'
