@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
     // Get references to the fixed fields
-    const fixedField1 = document.getElementById('User-Job-No.');
+    const fixedField1 = document.getElementById('City');
 
     // Add event listeners to the fixed fields
     fixedField1.addEventListener('blur', autoFillFields);
 
     function autoFillFields(){
         // Get references to the fields to be auto-filled
-        const autoField1 = document.getElementById('Name-of-the-Importer');
-        const autoField2 = document.getElementById('Customs-House-Code');
+        const autoField1 = document.getElementById('State');
+        const autoField2 = document.getElementById('Pin');
         const autoField3 = document.getElementById('Branch-Sr-No.');
 
         // Check if both fixed fields are filled
