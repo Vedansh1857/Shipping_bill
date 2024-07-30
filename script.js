@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     autoField2.value = 'USD';
                     autoField3.value = 'USDollars';
                 }
-            else if(fixedField1.value == "Item_Description_2: Wooden mandir")
+            else if(fixedField1.value == "Item_Description_1: Wooden mandir")
             {
                 autoField1.value = '20';
                 autoField2.value = 'INR';
