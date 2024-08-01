@@ -102,16 +102,16 @@ async def collect_batch_data(batch, semaphore):
     for element in batch:
         field_id = element.get_attribute("id")
         if field_id:
-            # if field_id == "User-Job-Date":
-            #     current_date = datetime.now().strftime("%d-%m-%Y")
-            #     batch_data[field_id] = current_date
-            # elif field_id == "Supporting_Documents_Upload":
-            #     file_path = r"D:/PinkmoonAI/invoice1r.pdf"
-            #     batch_data[field_id] = file_path
-            # else:
-            question = generate_question(field_id)
-            questions.append(question)
-            field_ids.append(field_id)
+            if field_id == "User-Job-Date":
+                current_date = datetime.now().strftime("%d-%m-%Y")
+                batch_data[field_id] = current_date
+            elif field_id == "Supporting_Documents_Upload":
+                file_path = r"D:/PinkmoonAI/invoice1r.pdf"
+                batch_data[field_id] = file_path
+            else:
+                question = generate_question(field_id)
+                questions.append(question)
+                field_ids.append(field_id)
     
     combined_questions = "\n".join(questions)
     response = await get_batch_response(combined_questions, embeddings, vector_stores, semaphore)
@@ -174,7 +174,7 @@ try:
     semaphore = asyncio.Semaphore(2)  # Adjust the number of concurrent requests as needed
 
     # Run the async function
-    asyncio.run(fill_fields_in_batches(filtered_elements, batch_size=100, delay=2, semaphore=semaphore))
+    asyncio.run(fill_fields_in_batches(all_elements, batch_size=100, delay=2, semaphore=semaphore))
 
 except Exception as e:
     print(f"An error occurred: {e}")
