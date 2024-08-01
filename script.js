@@ -27,9 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             else
             {
-                autoField1.value = "Invalid credentials";
-                autoField2.value = "Invalid credentials";
-                autoField3.value = "Invalid credentials";
+                autoField1.value = "InvalidCredentials";
+                autoField2.value = "InvalidCredentials";
             }
             // Auto-fill the other fields based on the values of the fixed fields
             // autoField1.value = fixedField1.value + ' - auto filled';
@@ -38,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
             // Clear the auto-filled fields if the fixed fields are not both filled
             autoField1.value = '';
             autoField2.value = '';
-            autoField3.value = '';
         }
     }
 });
