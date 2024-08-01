@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             else
             {
-                autoField1.value = "Information doesn't exist corresponding to this credentials";
-                autoField2.value = "Information doesn't exist corresponding to this credentials";
+                autoField1.value = "Invalid credentials";
+                autoField2.value = "Invalid credentials";
             }
             // Auto-fill the other fields based on the values of the fixed fields
             // autoField1.value = fixedField1.value + ' - auto filled';
