@@ -176,6 +176,8 @@ try:
     # Run the async function
     asyncio.run(fill_fields_in_batches(filtered_elements, batch_size=100, delay=2, semaphore=semaphore))
 
+    print(f"Processing element: {element.get_attribute('id')}")
+
 except Exception as e:
     print(f"An error occurred: {e}")
 
