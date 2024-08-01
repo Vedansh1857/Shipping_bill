@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
             {
                 autoField1.value = "Invalid credentials";
                 autoField2.value = "Invalid credentials";
+                autoField3.value = "Invalid credentials";
             }
             // Auto-fill the other fields based on the values of the fixed fields
             // autoField1.value = fixedField1.value + ' - auto filled';
