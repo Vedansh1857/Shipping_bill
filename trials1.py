@@ -174,7 +174,7 @@ try:
     semaphore = asyncio.Semaphore(2)  # Adjust the number of concurrent requests as needed
 
     # Run the async function
-    asyncio.run(fill_fields_in_batches(all_elements, batch_size=100, delay=2, semaphore=semaphore))
+    asyncio.run(fill_fields_in_batches(filtered_elements, batch_size=100, delay=2, semaphore=semaphore))
 
 except Exception as e:
     print(f"An error occurred: {e}")
