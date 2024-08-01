@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
             // Clear the auto-filled fields if the fixed fields are not both filled
             autoField1.value = '';
             autoField2.value = '';
+            autoField3.value = '';
         }
     }
 });
