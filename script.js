@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function(){
         if (fixedField1.value) {
             if(fixedField1.value == "David Import USA")
                 {
-                    autoField1.value = '2345 wall street'
+                    autoField1.value = '2345 wall street';
                     autoField2.value = 'New York';
                     autoField3.value = '73844474';
                 }
             else if(fixedField1.value == "Vedansh")
             {
                 autoField1.value = 'Daulatganj';
-                autoField2.value = 'Kanpur'
+                autoField2.value = 'Kanpur';
                 autoField3.value = '208001';
             }
             else
